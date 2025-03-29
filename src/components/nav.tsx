@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { ChevronDown } from "lucide-react"
 
 export function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -53,7 +60,19 @@ export function Nav() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-6">
-          <Link href="/about">About</Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 hover:text-neutral-600">
+              About <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start">
+              <DropdownMenuItem asChild>
+                <Link href="/about">About Us</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/approach">Our Approach</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Link href="/philosophy">Philosophy</Link>
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/team">Team</Link>
@@ -67,7 +86,8 @@ export function Nav() {
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-background border-b md:hidden">
             <div className="flex flex-col items-end gap-4 py-4 px-4 max-w-7xl mx-auto">
-              <Link href="/about">About</Link>
+              <Link href="/about">About Us</Link>
+              <Link href="/approach">Our Approach</Link>
               <Link href="/philosophy">Philosophy</Link>
               <Link href="/portfolio">Portfolio</Link>
               <Link href="/team">Team</Link>

@@ -2,9 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './src/pages/**/*.{ts,tsx}',
-    './src/components/**/*.{ts,tsx}',
-    './src/app/**/*.{ts,tsx}',
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
   	container: {
@@ -17,6 +18,15 @@ module.exports = {
   	extend: {
   		fontFamily: {
   			tiempos: ['var(--font-tiempos)'],
+  		},
+  		keyframes: {
+  			"cursor-blink": {
+  				"0%, 100%": { opacity: 1 },
+  				"50%": { opacity: 0 },
+  			}
+  		},
+  		animation: {
+  			"cursor-blink": "cursor-blink 1s ease-in-out infinite",
   		},
   		colors: {
   			border: 'hsl(var(--border))',
