@@ -8,7 +8,7 @@ interface SectionContainerProps {
 
 export function SectionContainer({ children, className = '', id }: SectionContainerProps) {
   return (
-    <section id={id} className={`py-24 ${className}`}>
+    <section id={id} className={`section ${className}`}>
       <div className="container">
         {children}
       </div>
