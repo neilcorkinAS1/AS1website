@@ -1,4 +1,4 @@
-import { SectionContainer } from "./section-container"
+import { SectionContainer } from "@/components/section-container"
 
 const approaches = [
   {
