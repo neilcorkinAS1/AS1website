@@ -1,4 +1,4 @@
-import { SectionContainer } from "./section-container"
+import { SectionContainer } from "@/components/ui/section-container"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 

@@ -1,4 +1,4 @@
-import { SectionContainer } from "./section-container"
+import { SectionContainer } from "@/components/ui/section-container"
 import { User } from "lucide-react"
 
 const team = [

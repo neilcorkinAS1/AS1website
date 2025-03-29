@@ -1,6 +1,6 @@
 import * as React from "react"
 
-interface SectionContainerProps {
+export interface SectionContainerProps {
   children: React.ReactNode
   className?: string
   id?: string
