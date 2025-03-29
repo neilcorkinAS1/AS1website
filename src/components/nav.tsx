@@ -86,14 +86,14 @@ export function Nav() {
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-background border-b md:hidden">
             <div className="flex flex-col items-end gap-4 py-4 px-4 max-w-7xl mx-auto">
-              <Link href="/about">About Us</Link>
-              <Link href="/approach">Our Approach</Link>
-              <Link href="/philosophy">Philosophy</Link>
-              <Link href="/portfolio">Portfolio</Link>
-              <Link href="/team">Team</Link>
-              <Link href="/insights">Insights</Link>
+              <Link href="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+              <Link href="/approach" onClick={() => setIsMenuOpen(false)}>Our Approach</Link>
+              <Link href="/philosophy" onClick={() => setIsMenuOpen(false)}>Philosophy</Link>
+              <Link href="/portfolio" onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
+              <Link href="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
+              <Link href="/insights" onClick={() => setIsMenuOpen(false)}>Insights</Link>
               <Button asChild>
-                <Link href="/login">Investor Login</Link>
+                <Link href="/login" onClick={() => setIsMenuOpen(false)}>Investor Login</Link>
               </Button>
             </div>
           </div>

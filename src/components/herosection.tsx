@@ -53,7 +53,7 @@ export function HeroSection() {
                 />
               </h1>
             </div>
-            <div className="prose-lg mx-auto">
+            <div className="prose-lg mx-auto mt-8 md:mt-12">
               <p>
                 Private Multi-Family Investment Office
               </p>
