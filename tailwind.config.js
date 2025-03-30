@@ -23,10 +23,10 @@ module.exports = {
   			"cursor-blink": {
   				"0%, 100%": { opacity: 1 },
   				"50%": { opacity: 0 },
-  			}
+  			},
   		},
   		animation: {
-  			"cursor-blink": "cursor-blink 1s ease-in-out infinite",
+  			"cursor-blink": "cursor-blink 1s ease-in-out infinite"
   		},
   		colors: {
   			border: 'hsl(var(--border))',
