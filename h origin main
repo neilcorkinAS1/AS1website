@@ -1,0 +1,5 @@
+[33mcommit b7fa345cee9dae69929193500206f23374944b02[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: neil-boardsmith <neil@boardsmith.com>
+Date:   Tue Apr 8 16:58:50 2025 +1000
+
+    fix: update build scripts for cross-platform compatibility using rimraf
