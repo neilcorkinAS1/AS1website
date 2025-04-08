@@ -3,20 +3,10 @@
 import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { PortfolioDetail } from "@/components/portfolio-detail"
-import type { PortfolioCompany, Category } from "@/types/portfolio"
+import type { PortfolioCompany } from "@/types/portfolio"
 import Image from "next/image"
-
-// Placeholder companies array - you can replace with actual data
-const portfolioCompanies: PortfolioCompany[] = Array.from({ length: 12 }, (_, i) => ({
-  id: `company-${i + 1}`,
-  name: `Company ${i + 1}`,
-  logo: "/placeholder-logo.png", // Replace with actual logo paths
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  categories: ["Consumer" as Category],
-  founded: "2024",
-  partnered: "2024",
-  highlights: ["Test highlight"]
-}))
+import { portfolioCompanies } from "@/data/portfolio-companies"
+import { Badge } from "@/components/ui/badge"
 
 export default function PortfolioPage() {
   const [selectedCompany, setSelectedCompany] = useState<PortfolioCompany | null>(null)
@@ -27,9 +17,14 @@ export default function PortfolioPage() {
         {portfolioCompanies.map((company) => (
           <Card 
             key={company.id}
-            className="p-8 hover:bg-muted/50 cursor-pointer transition-colors"
+            className="p-8 hover:bg-muted/50 cursor-pointer transition-colors relative"
             onClick={() => setSelectedCompany(company)}
           >
+            {company.isExited && (
+              <div className="absolute top-4 right-4">
+                <Badge variant="secondary">Exited</Badge>
+              </div>
+            )}
             <div className="relative h-32 w-full">
               <Image
                 src={company.logo}
