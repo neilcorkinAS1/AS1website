@@ -78,7 +78,7 @@ export function Nav() {
           <Link href="/team">Team</Link>
           <Link href="/insights">Insights</Link>
           <Button asChild>
-            <Link href="/login">Investor Login</Link>
+            <Link href="https://www.registrydirect.com.au/login">Investor Login</Link>
           </Button>
         </div>
 
@@ -93,7 +93,7 @@ export function Nav() {
               <Link href="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
               <Link href="/insights" onClick={() => setIsMenuOpen(false)}>Insights</Link>
               <Button asChild>
-                <Link href="/login" onClick={() => setIsMenuOpen(false)}>Investor Login</Link>
+                <Link href="https://www.registrydirect.com.au/login" onClick={() => setIsMenuOpen(false)}>Investor Login</Link>
               </Button>
             </div>
           </div>
