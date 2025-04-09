@@ -10,9 +10,9 @@ export function HeroSection() {
   const [isTyping, setIsTyping] = useState(true)
   
   const phrases = [
-    'Growth-Stage Technology Investments',
-    'Partnering with Exceptional Founders',
-    'Building Enduring Businesses'
+    'Investing in Technology-Enabled Businesses',
+    'Partnering with Exceptional Founders and Funds',
+    'High-Conviction Capital for Long-Term Growth'
   ]
 
   useEffect(() => {

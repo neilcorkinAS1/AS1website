@@ -74,7 +74,19 @@ export function Nav() {
             </DropdownMenuContent>
           </DropdownMenu>
           <Link href="/philosophy">Philosophy</Link>
-          <Link href="/portfolio">Portfolio</Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 hover:text-neutral-600">
+              Portfolio <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start">
+              <DropdownMenuItem asChild>
+                <Link href="/portfolio/growth-fund-1">AS1 Growth Fund 1</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/portfolio/fund-of-funds">AS1 Fund of Funds</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Link href="/team">Team</Link>
           <Link href="/insights">Insights</Link>
           <Button asChild>
@@ -89,7 +101,19 @@ export function Nav() {
               <Link href="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
               <Link href="/approach" onClick={() => setIsMenuOpen(false)}>Our Approach</Link>
               <Link href="/philosophy" onClick={() => setIsMenuOpen(false)}>Philosophy</Link>
-              <Link href="/portfolio" onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center gap-1 hover:text-neutral-600">
+                  Portfolio <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start">
+                  <DropdownMenuItem asChild>
+                    <Link href="/portfolio/growth-fund-1" onClick={() => setIsMenuOpen(false)}>AS1 Growth Fund 1</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/portfolio/fund-of-funds" onClick={() => setIsMenuOpen(false)}>AS1 Fund of Funds</Link>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
               <Link href="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
               <Link href="/insights" onClick={() => setIsMenuOpen(false)}>Insights</Link>
               <Button asChild>
