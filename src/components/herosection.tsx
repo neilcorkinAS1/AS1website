@@ -21,16 +21,16 @@ export function HeroSection() {
 
     if (isTyping) {
       if (displayText.length < currentPhrase.length) {
-        // Typing effect
+        // Typing effect - reducing from 100ms to 60ms per character
         timeout = setTimeout(() => {
           setDisplayText(currentPhrase.slice(0, displayText.length + 1))
-        }, 100)
+        }, 60)
       } else {
-        // Finished typing, wait 5 seconds then start next phrase
+        // Finished typing - reducing pause from 5000ms to 3000ms (3 seconds)
         timeout = setTimeout(() => {
           setDisplayText('')
           setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length)
-        }, 5000)
+        }, 3000)
       }
     }
 
@@ -42,7 +42,7 @@ export function HeroSection() {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="prose prose-sm md:prose w-full max-w-[90%] md:max-w-[80%] lg:max-w-[60%] mx-auto">
-            <div className="h-[8rem] mb-4">
+            <div className="h-[10rem] sm:h-[8rem] mb-8">
               <h1 className="mx-auto">
                 {displayText}
                 <span 
@@ -53,7 +53,7 @@ export function HeroSection() {
                 />
               </h1>
             </div>
-            <div className="prose-lg mx-auto mt-8 md:mt-12">
+            <div className="prose-lg mx-auto mt-12 md:mt-16">
               <p>
                 Private Multi-Family Investment Office
               </p>
