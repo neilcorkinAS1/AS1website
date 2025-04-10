@@ -38,7 +38,7 @@ export const funds: Fund[] = [
     id: "genesiscapital",
     name: "Genesis Capital",
     logo: "/logos/genesiscapital-logo.png",
-    description: "Genesis Capital targets mid-market healthcare businesses in Australia and New Zealand, typically with enterprise values between $50 million and $200 million. They focus on companies with strong growth potential and the opportunity to become leaders in their secto.",
+    description: "Genesis Capital targets mid-market healthcare businesses in Australia and New Zealand, typically with enterprise values between $50 million and $200 million. They focus on companies with strong growth potential and the opportunity to become leaders in their sector.",
     invested: "2021",
     website: "https://www.genesiscapital.com.au",
     aum: "A$350m+",

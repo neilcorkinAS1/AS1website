@@ -65,7 +65,7 @@ export const portfolioCompanies: PortfolioCompany[] = [
     id: "themartec",
     name: "The Martec",
     logo: "/logos/themartec-logo.png",
-    description: "The Martec is a AI-driven SaaS platform tailored for HR teams, enhancing their capabilities to attract, hire, and retaintop talent.",
+    description: "The Martec is a AI-driven SaaS platform tailored for HR teams, enhancing their capabilities to attract, hire, and retain top talent.",
     founded: "2023",
     partnered: "2023",
     website: "https://www.themartec.com"
