@@ -62,12 +62,9 @@ export function HeroSection() {
               We focus on growth-stage technology investments in both private & public markets, 
               taking an active, partnership-first approach.
             </p>
-            <div className="flex gap-3 md:gap-4 justify-center mt-6 md:mt-8">
+            <div className="flex justify-center mt-6 md:mt-8">
               <Button asChild size="lg">
                 <Link href="/about">About Us</Link>
-              </Button>
-              <Button variant="secondary" asChild size="lg">
-                <Link href="/insights">Read Our Insights →</Link>
               </Button>
             </div>
           </div>

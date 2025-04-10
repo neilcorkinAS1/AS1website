@@ -24,17 +24,43 @@ const teamMembers = [
   }
 ];
 
+const advisoryMembers = [
+  {
+    name: "Henry Tam",
+    title: "Advisory Board",
+    photoUrl: "/photos/henry.png",
+    linkedinUrl: "https://www.linkedin.com/in/henry-tam-b98503190/",
+    bio: "Henry is an experienced investor, businessman, and wealth manager with over 30 years of experience in investment advisory and wealth management. He has held senior roles at major financial institutions including HSBC, Merrill Lynch, and Macquarie Bank."
+  }
+];
+
 export default function Team() {
   return (
-    <main className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-12">Meet the Team</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {teamMembers.map((member) => (
-          <TeamMemberCard
-            key={member.name}
-            {...member}
-          />
-        ))}
+    <main className="container mx-auto px-4">
+      <div className="py-12">
+        <h1 className="text-4xl font-bold mb-12">Meet the Team</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {teamMembers.map((member) => (
+            <TeamMemberCard
+              key={member.name}
+              {...member}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="w-full h-px bg-gray-200 my-16" />
+
+      <div className="pb-12">
+        <h2 className="text-3xl font-bold mb-12">Advisory Board</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {advisoryMembers.map((member) => (
+            <TeamMemberCard
+              key={member.name}
+              {...member}
+            />
+          ))}
+        </div>
       </div>
     </main>
   );
