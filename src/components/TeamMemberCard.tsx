@@ -19,6 +19,9 @@ interface TeamMemberCardProps {
 }
 
 export function TeamMemberCard({ name, title, bio, photoUrl, linkedinUrl }: TeamMemberCardProps) {
+  // Split bio into sentences and filter out empty strings
+  const sentences = bio.split('.').filter(sentence => sentence.trim().length > 0);
+
   return (
     <Card className="overflow-hidden h-full flex flex-col">
       <div className="relative w-full p-4">
@@ -47,7 +50,11 @@ export function TeamMemberCard({ name, title, bio, photoUrl, linkedinUrl }: Team
         )}
       </CardHeader>
       <CardContent>
-        <p className="text-gray-600">{bio}</p>
+        <div className="space-y-2 text-gray-600">
+          {sentences.map((sentence, index) => (
+            <p key={index}>{sentence.trim() + '.'}</p>
+          ))}
+        </div>
       </CardContent>
     </Card>
   );
