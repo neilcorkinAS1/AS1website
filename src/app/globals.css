@@ -1,8 +1,9 @@
 @font-face {
   font-family: 'Tiempos Headline';
-  src: url('/fonts/test-tiempos-headline-regular.woff2') format('woff2');
+  src: url('/fonts/tiempos-headline-regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @tailwind base;
@@ -36,7 +37,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --font-tiempos: 'Tiempos', serif;
+    --font-tiempos: 'Tiempos Headline', serif;
   }
   
   .dark {
