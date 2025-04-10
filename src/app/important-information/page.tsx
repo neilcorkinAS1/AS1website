@@ -16,7 +16,7 @@ export default function ImportantInformation() {
       </p>
 
       <p>
-        The Information is not a recommendation to invest. Before you decide to invest in a fund managed by AS1 LV / AS1 Growth Partners (Fund), it is important that you first read and consider the Fund Information Memorandum.
+        The Information is not a recommendation to invest. Before you decide to invest in a fund managed by AS1 LV/AS1 Growth Partners (Fund), it is important that you first read and consider the Fund Information Memorandum.
       </p>
 
       <p>
