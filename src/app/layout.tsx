@@ -6,6 +6,9 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "AS1 Growth Partners",
   description: "Private Multi-Family Investment Office",
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
