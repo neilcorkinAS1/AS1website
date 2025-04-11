@@ -42,12 +42,12 @@ export function HeroSection() {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="prose prose-sm md:prose w-full max-w-[90%] md:max-w-[80%] lg:max-w-[60%] mx-auto">
-            <div className="h-[10rem] sm:h-[8rem] mb-8">
-              <h1 className="mx-auto">
+            <div className="h-[12rem] sm:h-[10rem] md:h-[8rem] mb-8">
+              <h1 className="mx-auto text-2xl sm:text-3xl md:text-4xl lg:text-5xl break-words">
                 {displayText}
                 <span 
                   className={`
-                    inline-block w-0.5 h-12 bg-neutral-800 ml-2
+                    inline-block w-0.5 h-8 sm:h-10 md:h-12 bg-neutral-800 ml-2
                     ${displayText.length < phrases[currentPhraseIndex].length ? 'opacity-100' : 'animate-cursor-blink'}
                   `} 
                 />
