@@ -21,6 +21,13 @@ const teamMembers = [
     photoUrl: "/photos/joe.png",
     linkedinUrl: "https://www.linkedin.com/in/joe-patrick-36223b65/",
     bio: "Joe is a Principal at AS1 Growth Partners. Before joining AS1, Joe founded Astral Ventures, a technology-focused corporate advisory firm providing transaction execution support on milestone transactions for technology companies and venture capital funds. Joe started his career in investment banking at J.P Morgan, where he was involved with numerous Australian and cross-border M&A and IPO transactions. He is an inaugural Startmate Fellow and a graduate of the Australian Institute of Company Directors. Joe holds a Bachelor of Laws and Commerce from Bond University"
+  },
+  {
+    name: "Les Wigan",
+    title: "Operating Partner",
+    photoUrl: "/photos/Les.png",
+    linkedinUrl: "https://www.linkedin.com/in/les-wigan-9a42655/",
+    bio: "Les is a digital growth and transformation executive with 30 years' experience scaling consumer and B2B businesses. Most recently at Foxtel Group, Les held senior roles including Managing Director, COO, and Chief Product & Technology Officer, co-founding Kayo Sports, Binge, and Hubbl — services now reaching around half of Australian households each year. He was a key part of a broader turnaround that culminated in the successful sale of the business to DAZN for $3.4bn\n\nLes brings a deep understanding of customers, shaped by experience across product, technology, and commercial leadership. A qualified CPA and AICD graduate, he has worked across global markets (UK and US) and served at Board level, guiding acquisitions, joint ventures, and investment strategy. Les works closely with executives and teams to navigate key transitions, helping businesses scale with focus and create enduring value."
   }
 ];
 
