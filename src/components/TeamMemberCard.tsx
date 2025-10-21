@@ -54,7 +54,7 @@ export function TeamMemberCard({ name, title, bio, photoUrl, linkedinUrl }: Team
             </a>
           )}
           <Button
-            variant="outline"
+            variant="secondary"
             size="sm"
             onClick={() => setIsExpanded(!isExpanded)}
             className="flex items-center gap-1"
